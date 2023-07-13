@@ -1,0 +1,184 @@
+this_year_bycond,this_year_descrip_e,this_year_descrip_f,last_year_bycond,last_year_descrip_e,last_year_descrip_f
+LEVEL2ID = 200,ACM - International Platform,ACM - Plateforme internationale,LEVEL2ID = 200,ACM - International Platform,ACM - Plateforme internationale
+LEVEL2ID = 201,"BFM - International Business Development, Investment and Innovation (Chief Trade Commissioner)","BFM - Développement du commerce international, investissement et innovation (Déléguée commerciale en chef)",NA,NA,NA
+LEVEL2ID = 202,"CFM - Consular, Security and EM (CSO)","CFM - Consulaire, Sécurité et GU (DPS)",NA,NA,NA
+LEVEL2ID = 203,"CORE - Office of Canadian Ombudsperson for Responsible Enterprise / DPD - International Assistance Operations Bureau / JUS - GAC Legal Services / VBD - Office of the Chief Audit Executive / WPSA - Ambassador for Women, Peace and Security / ZID - Inspection, Integrity and Values & Ethics Bureau","CORE - Bureau de l'Ombudsman canadian de la responsabilité des entreprises / DPD - Opérations d'aide internationale / JUS - Services juridiques AMC / VBD - Bureau du dirigeant princ. de l'audit / ZID - Direction générale de l’inspection, de l’intégrité, des valeurs et de l’éthique",NA,NA,NA
+LEVEL2ID = 204,MIN - Ministers Offices / DM - Deputy Ministers' Offices / USS,MIN - Bureaux des ministres / DM - Bureaux des sous-ministres / USS,LEVEL2ID = 203,MIN - Ministers Offices / DM - Deputy Ministers' Offices / USS,MIN - Bureaux des ministres / DM - Bureaux des sous-ministres / USS
+LEVEL2ID = 205,DCD - Corporate Secretariat,DCD - Secrétaire des affaires ministérielles,NA,NA,NA
+LEVEL2ID = 206,DSMX - Summits Management Office,DSMX - Bureau de la gestion des sommets,LEVEL2ID = 205,DSMX - Summits Management Office,DSMX - Bureau de la gestion des sommets
+LEVEL2ID = 207,"EGM - Europe, Artic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb",NA,NA,NA
+LEVEL2ID = 208,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL2ID = 207,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
+LEVEL2ID = 208,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL3ID = 318,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
+LEVEL2ID = 209,HCM - Human Resources,HCM - Ressources Humaines,LEVEL2ID = 208,HCM - Human Resources,HCM - Ressources Humaines
+LEVEL2ID = 210,IFM - International Security,IFM - Sécurité internationale,NA,NA,NA
+LEVEL2ID = 211,JFM - Legal Affairs,JFM - Affaires légales,NA,NA,NA
+LEVEL2ID = 212,KFM - Partnerships for Development Innovation,KFM - Partenariats pour l'innovation dans le développement,NA,NA,NA
+LEVEL2ID = 213,LCM - Public Affairs,LCM - Affaires publiques,LEVEL2ID = 213,LCM - Public Affairs,LCM - Affaires publiques
+LEVEL2ID = 214,MFM - Global Issues and Development,MFM - Enjeux Mondiaux et du développement,NA,NA,NA
+LEVEL2ID = 215,NGM - Americas,NGM - Amériques,LEVEL2ID = 215,NGM - Americas,NGM - Amériques
+LEVEL2ID = 216,OGM - Asia Pacific,OGM - Asie-Pacifique,LEVEL2ID = 216,OGM - Asia Pacific,OGM - Asie-Pacifique
+LEVEL2ID = 217,PFM - Strategic Policy,PFM - Politique stratégique,NA,NA,NA
+LEVEL2ID = 218,"SCM - Corporate Planning, Finance and Information Technology (Chief Financial Officer)","SCM - Planification ministérielle, finance et technologie de l’information (Dirigeant principal des finances)",NA,NA,NA
+LEVEL2ID = 219,TFM - Trade Policy and Negotiations,TFM - Politique & négociations commerciales,NA,NA,NA
+LEVEL2ID = 220,WGM - Sub-Saharan Africa,WGM - Afrique subsaharienne,NA,NA,NA
+LEVEL2ID = 221,XDD - Office of Protocol,XDD - Bureau du Protocole,LEVEL2ID = 221,XDD - Office of Protocol,XDD - Bureau du Protocole
+LEVEL2ID = 999,I cannot find my organizational unit,Je ne trouve pas mon unité organisationnelle,NA,NA,NA
+LEVEL3ID = 300,AAD - Platform Corporate Services,AAD - Services ministériels de la plateforme,LEVEL3ID = 301,AAD - Platform Corporate Services,AAD - Services ministériels de la plateforme
+LEVEL3ID = 301,"ACM - ADM Office / ABD - Platform Planning, Engagement and Results / AFD - Client Relations and Mission Operations","ACM - Bureau du SMA / ABD - Planification, mobilisation et résultats de la plateforme / AFD - Relations avec les clients et opérations des missions",NA,NA,NA
+LEVEL3ID = 302,ARD - Strategic Planning and Stewardship,ARD - Planification stratégique et de l'intendance,LEVEL3ID = 303,ARD - Strategic Planning and Stewardship,ARD - Planification stratégique et de l'intendance
+LEVEL3ID = 303,"AWD - Project Delivery, Professional & Technical Services","AWD - Livraison de projet, services professionnels et techniques",NA,NA,NA
+LEVEL3ID = 304,BBD - Trade Sectors,BBD - Secteurs commerciaux,LEVEL3ID = 306,BBD - Trade Sectors,BBD - Secteurs commerciaux
+LEVEL3ID = 305,BFM - ADM Office / BPD - Trade Portfolio Strategy and Coordination,BFM - Bureau du SMA / BPD - Stratégie et coordination du portefeuille commercial,NA,NA,NA
+LEVEL3ID = 306,"BID - Investment, Innovation and Education","BID - Investissement, innovation et éducation",NA,NA,NA
+LEVEL3ID = 307,BSD - Regional Trade Operations and Intergovernmental Relations,BSD - Opérations commerciales régionales et relations intergouvernementales,LEVEL3ID = 307,BSD - Regional Trade Operations and Intergovernmental Relations,BSD - Opérations commerciales régionales et relations intergouvernementales
+LEVEL3ID = 308,BTD - Trade Commissioner Service - Operations,BTD - Service des délégués commerciaux – Opérations,NA,NA,NA
+LEVEL3ID = 309,CED - Security and Emergency Management - Strategy and Policy bureau,CED - Sécurité et gestion des urgences - Bureau de la stratégie et de la politique,NA,NA,NA
+LEVEL3ID = 310,CFM - ADM Office / CFH - Health Incident Task Force / CND - Consular Operations / CPD - Consular Policy Bureau,CFM - Bureau du SMA / CFH - Groupe de travail sur les incidents de santé / CND - Opérations consulaires / CPD - Bureau des politiques consulaires,NA,NA,NA
+LEVEL3ID = 311,CSD - Security and Emergency Management,CSD - Sécurité et gestion des urgences,LEVEL3ID = 309,CSD - Security and Emergency Management,CSD - Sécurité et gestion des urgences
+LEVEL3ID = 312,MINA - Minister of Foreign Affairs / MINE - International Development / MINT - Minister of International Trade / USS - Deputy Minister of Foreign Affairs / DMA - Associate DM of Foreign Affairs / DME - Deputy Minister of International Development / DMT - Deputy Minister of International Trade,MINA - Ministre des Affaires étrangères / MINE - Développement international / MINT - Ministre du Commerce international / USS - Sous-ministre des Affaires étrangères / DMA - Sous-ministre délégué des Aff étrangères / DME - Sous-ministre du Développement international / DMT - Sous-ministre du Commerce international,NA,NA,NA
+LEVEL3ID = 313,DCD -  Corporate Secretary Office / DCB - Executive Briefing Division / DCC - Ministerial Correspondence / DCL - Cabinet and Parliamentary Affairs Division / DCP - Access to Information and Privacy / MINL - Departmental Liaison Unit,DCD - Secrétaire des services intégrés / DCB - Direction du breffage de la haute direction / DCC - Correspondance ministérielle / DCL - Direction des relations avec le Cabinet et le Parlement / DCP - Accès à l'information et protection des renseignements personnels / MINL - Unité de Liaison ministérielle,NA,NA,NA
+LEVEL3ID = 314,DSMX - ADM Office / DSMO - Director General Planning / DSMP - Director General Programs,DSMX - Bureau du SMA / DSMO - Directeur général de la planification / DSMP - Directeur général des programmes,NA,NA,NA
+LEVEL3ID = 315,"EGM - ADM Office / ECD - Office of the Senior Arctic Official and DG of Arctic, Eurasian and European Affairs","EGM - Bureau du SMA / ECD - Bureau de la Haute Représentante pour l'Arctique et DG, affaires arctiques, de l'Eurasie et de l'Europe",NA,NA,NA
+LEVEL3ID = 316,"ELD - North Africa, Israel, West Bank/Gaza","ELD - Afrique N, Israël, Cisjordanie/Gaza",LEVEL3ID = 317,"ELD - North Africa, Israel, West Bank/Gaza","ELD - Afrique N, Israël, Cisjordanie/Gaza"
+LEVEL3ID = 317,ESD - Middle East Bureau,ESD - Direction générale Moyen-Orient,LEVEL3ID = 316,ESD - Middle East Bureau,ESD - Direction générale Moyen-Orient
+LEVEL3ID = 318,EUD - Bureau of European Affairs,EUD - Dir. gén. des affaires européennes,LEVEL3ID = 315,EUD - Bureau of European Affairs,EUD - Dir. gén. des affaires européennes
+LEVEL3ID = 319,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL2ID = 207,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
+LEVEL3ID = 319,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL3ID = 318,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
+LEVEL3ID = 320,HCM - ADM Office / HWD - Workplace Relations and Corporate Health Bureau,HCM - Bureau du SMA / HWD - Direction générale des relations en milieu de travail et santé organisationnelle,LEVEL3ID = 319,HCM - ADM Office / HWD - Workplace Relations and Corporate Health Bureau,HCM - Bureau du SMA / HWD - Direction générale des relations en milieu de travail et santé organisationnelle
+LEVEL3ID = 321,CFSI - Canadian Foreign Service Institute,CFSI - Institut canadien du service extérieur,LEVEL3ID = 322,CFSI - Canadian Foreign Service Institute,CFSI - Institut canadien du service extérieur
+LEVEL3ID = 322,HED - FSD Services and Policy Bureau / HLD - Locally Engaged Staff,HED - Dir gén des services et politiques / HLD - Employés recrutés sur place,LEVEL3ID = 323,HED - FSD Services and Policy Bureau / HLD - Locally Engaged Staff,HED - Dir gén des services et politiques / HLD - Employés recrutés sur place
+LEVEL3ID = 323,HFD - Assignments and Executive Management,HFD - Affectations et gestion des cadres,LEVEL3ID = 321,HFD - Assignments and Executive Management,HFD - Affectations et gestion des cadres
+LEVEL3ID = 324,HSD - Corporate and Operational Human Resources,HSD - Ressources humaines ministérielles et opérationnelles,LEVEL3ID = 320,HSD - Corporate and Operational Human Resources,HSD - Ressources humaines ministérielles et opérationnelles
+LEVEL3ID = 325,IFM - ADM Office / ICD - Bureau for International Crime and Terrorism,IFM - Bureau du SMA / ICD - Bureau du crime international et du terrorisme,NA,NA,NA
+LEVEL3ID = 326,IGD - International Security Policy Bureau,IGD - DG politique de sécurité int.,LEVEL3ID = 325,IGD - International Security Policy Bureau,IGD - DG politique de sécurité int.
+LEVEL3ID = 327,IND - Intelligence Bureau,IND - Bureau du renseignement,NA,NA,NA
+LEVEL3ID = 328,"IOD - Office of Human Rights, Freedoms and Inclusion","IOD - Bureau des droits de la personne, des libertés et de l’inclusion",NA,NA,NA
+LEVEL3ID = 329,IRD - Peace & Stabilization Operations Pro,IRD - DG Prog pour stab&opérations de paix,LEVEL3ID = 326,IRD - Peace & Stabilization Operations Pro,IRD - DG Prog pour stab&opérations de paix
+LEVEL3ID = 330,JFM - ADM Office / JLT - Trade Law (Deputy Legal Adviser),JFM - Bureau du SMA / JLT - Droit commercial (Jurisconsulte adjoint),NA,NA,NA
+LEVEL3ID = 331,JLD - Legal Affairs (Deputy Legal Adviser),JLD - Affaires juridiques (Jurisconsulte adjoint),NA,NA,NA
+LEVEL3ID = 332,KFM - ADM Office / KSD - Canadian Part. for Health & Social,KFM - Bureau du SMA / KSD - Part. can. pour la santé & dév. Soc,NA,NA,NA
+LEVEL3ID = 333,KED - Engaging Canadians,KED - Mobilisation des Canadiens,NA,NA,NA
+LEVEL3ID = 334,"KGD - Inc. Growth, Governance & Innovation","KGD - Part. croissance, gouv. & Innovation",NA,NA,NA
+LEVEL3ID = 335,LCM - ADM Office / LCA - Development / LCC - Trade,LCM - Bureau du SMA / LCA - Développement / LCC - Commerce,NA,NA,NA
+LEVEL3ID = 336,LCD - Strategic Communications,LCD - Communications stratégiques,NA,NA,NA
+LEVEL3ID = 337,LDD - Digital Communications,LDD - Communications numériques,LEVEL3ID = 332,LDD - Digital Communications,LDD - Communications numériques
+LEVEL3ID = 338,MFM - ADM Office / DWD - Director General Expo Dubaï 2020 / MFMA - Business Management & Administration Unit / MFMZ - Business Intelligence Unit / MHD - International Humanitarian Assistance,MFM - Bureau du SMA / DWD - Directeur Général Expo Dubaï 2020 / MFMA - Unité de gestion et d'administration / MFMZ - Unité d'intelligence d'affaires / MHD - Assistance humanitaire internationale,NA,NA,NA
+LEVEL3ID = 339,MED - Economic Development,MED - Développement économique,NA,NA,NA
+LEVEL3ID = 340,MGD - Social Development,MGD - Développement social,NA,NA,NA
+LEVEL3ID = 341,MID - International Organizations,MID - Organisations internationales,LEVEL3ID = 335,MID - International Organizations,MID - Organisations internationales
+LEVEL3ID = 342,MLD - Innovative and Climate Finance Bureau,MLD - Direction du financement innovant et climatique,NA,NA,NA
+LEVEL3ID = 343,MND - Health and Nutrition,MND - Santé et de la nutrition,NA,NA,NA
+LEVEL3ID = 344,MSD - Food Security and Environment,MSD - Sécurité alimentaire et de l'environnement,NA,NA,NA
+LEVEL3ID = 345,NGM - ADM Office / NGD - North America Strategy Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord,NA,NA,NA
+LEVEL3ID = 346,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes,LEVEL3ID = 339,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes
+LEVEL3ID = 347,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines,LEVEL3ID = 338,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines
+LEVEL3ID = 348,NMD - Geographic Coordination and Mission Support Bureau,NMD - Direction générale de la coordination géographique et appui aux missions,NA,NA,NA
+LEVEL3ID = 349,NND - North America Advocacy and Commercial Programs,NND - Promotion des intérêts et programmes commerciaux de l’Amérique du Nord,NA,NA,NA
+LEVEL3ID = 350,OGM - ADM Office / OSD - Southeast Asia and Oceania,OGM - Bureau du SMA / OSD - Asie Sud-Est et Océanie,LEVEL3ID = 340,OGM - ADM Office / OSD - Southeast Asia,OGM - Bureau du SMA / OSD - Asie Sud-Est
+LEVEL3ID = 351,OAD - South Asia,OAD - Asie du Sud,LEVEL3ID = 342,OAD - South Asia,OAD - Asie du Sud
+LEVEL3ID = 352,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
+LEVEL3ID = 353,PFM - ADM Office / POD - Foreign Policy,PFM - Bureau du SMA / POD - Politique étrangère,NA,NA,NA
+LEVEL3ID = 354,PED - International Economic Policy,PED - Politiques économiques internationales,NA,NA,NA
+LEVEL3ID = 355,PRD - Evaluation and Results Bureau,PRD - Bureau de l'évaluation et résultats,NA,NA,NA
+LEVEL3ID = 356,PVD - International Assistance Policy,PVD - Politique d'aide internationale,NA,NA,NA
+LEVEL3ID = 357,SCM - ADM Office / SED - Export & import controls system / SRD - Corporate Planning and Reporting,SCM - Bureau du SMA / SED - Système contrôle de l'import-export / SRD - Planification ministérielle et rapports,NA,NA,NA
+LEVEL3ID = 358,SGD - Grants and Contributions Management,SGD - Gestion des subventions et contributions,LEVEL3ID = 347,SGD - Grants and Contributions Management,SGD - Gestion des subventions et contributions
+LEVEL3ID = 359,SID - Information Management and Technology (Chief Information Officer),SID - Gestion de l’information et de la technologie (Dirigeant principal de l'information),NA,NA,NA
+LEVEL3ID = 360,SMD - Financial Operations,SMD - Opérations financières,LEVEL3ID = 346,SMD - Financial Operations,SMD - Opérations financières
+LEVEL3ID = 361,"SPD - Procurement, Asset Management",SPD - Approvisionnement et gestion de l’actif,NA,NA,NA
+LEVEL3ID = 362,SWD - Financial Planning and Management,SWD - Gestion et planification financière,LEVEL3ID = 345,SWD - Financial Planning and Management,SWD - Gestion et planification financière
+LEVEL3ID = 363,TFM - ADM Office / TFMA - Associate ADM / TFMU - Corporate Administrative Services / TND - North American Trade Policy and Negotiations Bureau,TFM - Bureau du SMA / TFMA - SMA déléguée / TFMU - Services administratifs ministériels / TND - Bureau de la politique commerciale et négociations en Amérique du Nord,NA,NA,NA
+LEVEL3ID = 364,TCD - Trade Negotiations,TCD - Négociations commerciales,NA,NA,NA
+LEVEL3ID = 365,TID - Trade and Export Controls,TID - Réglementation commerciale et contrôles à l’exportation,NA,NA,NA
+LEVEL3ID = 366,TMD - Chief Air Negotiator / Intellectual Property and Services Trade,TMD - Négociateur en chef des accords aériens / Propriété intellectuelle et services commerciaux,NA,NA,NA
+LEVEL3ID = 367,TPD - Market Access,TPD - Accès aux marchés,NA,NA,NA
+LEVEL3ID = 368,WGM ADM Office / WFD - Pan-Africa Bureau,WGM - Bureau du SMA / WFD - Direction générale panafricaine,NA,NA,NA
+LEVEL3ID = 369,WED - Southern and Eastern Africa Bureau,WED - Direction générale de l’Afrique australe et de l’Est,NA,NA,NA
+LEVEL3ID = 370,WWD - West and Central Africa Bureau,WWD - Direction générale de l’Afrique de l’Ouest et du Centre,NA,NA,NA
+LEVEL3ID = 371,"XDD - Office of the Chief of Protocol / XDC - Diplomatic Corps Services / XDE - Summits, Official Events & Management Services / XDM - Management Services Division / XDV - Official Visits","XDD - Bureau du Chef du Protocole / XDC - Service du Corps Diplomatique / XDE - Sommets, événements officiels et services des gestion / XDM - Direction des Services de gestion / XDV - Visites officielles",NA,NA,NA
+LEVEL4ID = 400,"Canada: ECD - Office of the Senior Arctic Official and DG of Arctic, Eurasian and European Affairs","Canada : EGM - Bureau du SMA / ECD - Bureau de la Haute Représentante pour l'Arctique et DG, affaires arctiques, de l'Eurasie et de l'Europe",NA,NA,NA
+LEVEL4ID = 401,Abroad: ANKRA / BGRAD / COPEN / HSNKI / ISTBL / KYIV / MOSCO / NSLTN / OSLO / RKJVK / STKHM,À l'étranger : ANKRA / BGRAD / COPEN / HSNKI / ISTBL / KYIV / MOSCO / NSLTN / OSLO / RKJVK / STKHM,NA,NA,NA
+LEVEL4ID = 402,"Canada: ELD - North Africa, Israel, West Bank/Gaza","Canada : ELD - Afrique N, Israël, Cisjordanie/Gaza",NA,NA,NA
+LEVEL4ID = 403,Abroad: ALGER / CAIRO / RABAT / RMLAH / TAVIV / TRPLI / TUNIS,À l'étranger : ALGER / CAIRO / RABAT / RMLAH / TAVIV / TRPLI / TUNIS,NA,NA,NA
+LEVEL4ID = 404,Canada: ESD - Middle East Bureau,Canada : ESD - Direction générale Moyen-Orient,NA,NA,NA
+LEVEL4ID = 405,Abroad: ABDBI / AMMAN / BERUT / BGHDD / DOHA / DUBAI / ERBIL / KWAIT / RYADH,À l'étranger : ABDBI / AMMAN / BERUT / BGHDD / DOHA / DUBAI / ERBIL / KWAIT / RYADH,NA,NA,NA
+LEVEL4ID = 406,Canada: EUD - Bureau of European Affairs,Canada : EUD - Dir. gén. des affaires européennes,NA,NA,NA
+LEVEL4ID = 407,Abroad Cluster 1: CSDPLD / LDN / PARIS / ROME / VATCN,À l'étranger groupement 1 : CSDPLD / LDN / PARIS / ROME / VATCN,NA,NA,NA
+LEVEL4ID = 408,Abroad Cluster 2: BREU / BRLIN / BRU / CSDPBR / CSDPBU / DDORF / HAGUE / MUNIC,À l'étranger groupement 2: BREU / BRLIN / BRU / CSDPBR / CSDPBU / DDORF / HAGUE / MUNIC,NA,NA,NA
+LEVEL4ID = 409,Abroad Cluster 3: ATHNS / BCLNA / BERN / BPEST / BRTSV / BUCST / DUBLN / LSBON / MDRID / PRGUE / RIGA / TALIN / VIENN / VLNUS / WSAW / ZAGRB,À l'étranger groupement 3: ATHNS / BCLNA / BERN / BPEST / BRTSV / BUCST / DUBLN / LSBON / MDRID / PRGUE / RIGA / TALIN / VIENN / VLNUS / WSAW / ZAGRB,NA,NA,NA
+LEVEL4ID = 410,Canada: IGD - International Security Policy Bureau,Canada : IGD - DG politique de sécurité int.,NA,NA,NA
+LEVEL4ID = 411,Abroad: VOSCE / VPERM / BNATO,À l'étranger : VOSCE / VPERM / BNATO,NA,NA,NA
+LEVEL4ID = 412,Canada: MID - International Organizations,Canada : MID - Organisations internationales,NA,NA,NA
+LEVEL4ID = 413,Abroad: GENEV / PESCO / PRMNY,À l'étranger : GENEV / PESCO / PRMNY,NA,NA,NA
+LEVEL4ID = 414,Canada: NDD - Central America & Caribbean,Canada : NDD - Amérique centrale & Caraïbes,NA,NA,NA
+LEVEL4ID = 415,Abroad Cluster 1: GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,À l'étranger groupement 1 : GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,NA,NA,NA
+LEVEL4ID = 416,Abroad Cluster 2: BDGTN / HAVAN / KNGTN / PRNCE,À l'étranger groupement 2 : BDGTN / HAVAN / KNGTN / PRNCE,NA,NA,NA
+LEVEL4ID = 417,Canada: NLD - South America and Inter-American Affairs,Canada : NLD - Amérique du Sud et Affaires interaméricaines,NA,NA,NA
+LEVEL4ID = 418,Abroad Cluster 1: BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,À l'étranger groupement 1 : BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,NA,NA,NA
+LEVEL4ID = 419,Abroad Cluster 2: BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,À l'étranger groupement 2 : BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,NA,NA,NA
+LEVEL4ID = 420,Abroad Cluster 1: WSHDC,À l'étranger groupement 1 : WSHDC,NA,NA,NA
+LEVEL4ID = 421,Abroad Cluster 2 : ATNTA / BOSTN / CHCGO / CNGNY / CSDPWS / DALAS / DENVR / DTROT / HSTON / LNGLS / MIAMI / MNPLS / PALTO / SEATL / SFRAN / SNDGO,À l'étranger groupement 2 : ATNTA / BOSTN / CHCGO / CNGNY / CSDPWS / DALAS / DENVR / DTROT / HSTON / LNGLS / MIAMI / MNPLS / PALTO / SEATL / SFRAN / SNDGO,NA,NA,NA
+LEVEL4ID = 422,Abroad Cluster 3: APLCO / CNCUN / CRMEN / CSDPMX / GJARA / LCABO / MNTRY / MXICO / MZTLN / PVRTA,À l'étranger groupement 3 : APLCO / CNCUN / CRMEN / CSDPMX / GJARA / LCABO / MNTRY / MXICO / MZTLN / PVRTA,NA,NA,NA
+LEVEL4ID = 423,Canada: OGM - ADM Office / OSD - Southeast Asia and Oceania,Canada: OGM - Bureau du SMA / OSD - Asie Sud-Est et Océanie,LEVEL3ID = 340,OGM - ADM Office / OSD - Southeast Asia,OGM - Bureau du SMA / OSD - Asie Sud-Est
+LEVEL4ID = 424,Abroad Cluster 1: AKLND / ASEAN / BSBGN / CNBRA / JKRTA / KLMPR / SPORE / SYDNY / WLGTN,À l'étranger groupement 1 : AKLND / ASEAN / BSBGN / CNBRA / JKRTA / KLMPR / SPORE / SYDNY / WLGTN,LEVEL3ID = 340,OGM - ADM Office / OSD - Southeast Asia,OGM - Bureau du SMA / OSD - Asie Sud-Est
+LEVEL4ID = 425,Abroad Cluster 2: BNGKK / CSDPMN / HANOI / HOCHI / MANIL / PNPEN / VNTNE / YNGON,À l'étranger groupement 2 : BNGKK / CSDPMN / HANOI / HOCHI / MANIL / PNPEN / VNTNE / YNGON,LEVEL3ID = 340,OGM - ADM Office / OSD - Southeast Asia,OGM - Bureau du SMA / OSD - Asie Sud-Est
+LEVEL4ID = 426,Canada: OAD - South Asia,Canada : OAD - Asie du Sud,LEVEL3ID = 342,OAD - South Asia,OAD - Asie du Sud
+LEVEL4ID = 427,Abroad Cluster 1: AMDBD / BAGLR / CHADG / CHENI / CSDPDH / DELHI / HDRBD / KLKTA / MMBAI,À l'étranger groupement 1 : AMDBD / BAGLR / CHADG / CHENI / CSDPDH / DELHI / HDRBD / KLKTA / MMBAI,LEVEL3ID = 342,OAD - South Asia,OAD - Asie du Sud
+LEVEL4ID = 428,Abroad Cluster 2: CLMBO / DHAKA / ISBAD,À l'étranger groupement 2 : CLMBO / DHAKA / ISBAD,LEVEL3ID = 342,OAD - South Asia,OAD - Asie du Sud
+LEVEL4ID = 429,Canada: OPD - Trade & Diplomacy North Asia,Canada : OPD - Asie du nord,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
+LEVEL4ID = 430,Abroad Cluster 1: BEJING,À l'étranger groupement 1 : BEJING,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
+LEVEL4ID = 431,Abroad Cluster 2: CHONQ / GANZU / HKONG / SHNGI,À l'étranger groupement 2 : CHONQ / GANZU / HKONG / SHNGI,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
+LEVEL4ID = 432,Abroad Cluster 3: KYUSHU / NGOYA / OSAKA / SEOUL / TAPEI / TOKYO / ULAAN,À l'étranger groupement 3 : KYUSHU / NGOYA / OSAKA / SEOUL / TAPEI / TOKYO / ULAAN,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
+LEVEL4ID = 433,Canada: PED - International Economic Policy,Canada : PED - Politiques économiques internationales,NA,NA,NA
+LEVEL4ID = 434,Abroad: POECD,À l'étranger : POECD,NA,NA,NA
+LEVEL4ID = 435,Canada: WED - Southern and Eastern Africa Bureau,Canada : WED - Direction générale de l’Afrique australe et de l’Est,NA,NA,NA
+LEVEL4ID = 436,Abroad Cluster 1: ADDIS / JBURG / KGALI / NROBI / PRET,À l'étranger groupement 1 : ADDIS / JBURG / KGALI / NROBI / PRET,NA,NA,NA
+LEVEL4ID = 437,Abroad Cluster 2: DSLAM / HRARE / JUBA / KHRTM / LSAKA / MPUTO,À l'étranger groupement 2 : DSLAM / HRARE / JUBA / KHRTM / LSAKA / MPUTO,NA,NA,NA
+LEVEL4ID = 438,Canada: WWD - West and Central Africa Bureau,Canada : WWD - Direction générale de l’Afrique de l’Ouest et du Centre,NA,NA,NA
+LEVEL4ID = 439,Abroad Cluster 1: ABUJA / ACCRA / DAKAR / LAGOS,À l'étranger groupement 1 : ABUJA / ACCRA / DAKAR / LAGOS,NA,NA,NA
+LEVEL4ID = 440,Abroad Cluster 1: ABDJN / BMAKO / CTONU / KNSHA / OUAGA / YUNDE,À l'étranger groupement 1 : ABDJN / BMAKO / CTONU / KNSHA / OUAGA / YUNDE,NA,NA,NA
+NA,NA,NA,LEVEL3ID = 300,"ACM - ADM Office / ABD - Platform Planning, Engagement and Results / ACME - Major Projects - Tokyo / AFD - Client Relations and Mission Operations","ACM - Bureau du SMA / ABD - Planification, mobilisation et résultats de la plateforme / ACME - Projets majeurs - Tokyo / AFD - Relations avec les clients et opérations des missions"
+NA,NA,NA,LEVEL3ID = 302,"AWD - Delivery, Professional & Technical Services","AWD - Livraison, services professionnels et techniques"
+NA,NA,NA,LEVEL2ID = 201,BFM - International Business Investment and Innovation,"BFM - Développement du commerce international, investissement et innovation"
+NA,NA,NA,LEVEL3ID = 304,"BFM - ADM Office / BED - Trade Analysis / BID - Investment, Innovation and Education / BPD - Trade Portfolio Strategy and Coordination","BFM - Bureau du SMA / BED - Analyse du commerce / BID - Investissement, innovation et éducation / BPD - Stratégie et coordination du portefeuille commercial"
+NA,NA,NA,LEVEL3ID = 305,BTD - Trade Commissioner Service - Operations,BTD - Service des délégués commerciaux - Opérations
+NA,NA,NA,LEVEL2ID = 202,"CFM - Consular, Security and Emergency Management","CFM - Services consulaires, sécurité et gestion des mesures d'urgence"
+NA,NA,NA,LEVEL3ID = 308,CFM - ADM Office / CBMO - Business Management Office / CFH - Health Incident Task Force / CND - Consular Operations / CPD - Consular Policy Bureau,CFM - Bureau du SMA / CBMO - Bureau de la gestion des activités / CFH - Groupe de travail sur les incidents de santé / CND - Opérations consulaires / CPD - Bureau des politiques consulaires
+NA,NA,NA,LEVEL3ID = 310,"MINA - Minister of Foreign Affairs / MINE - International Development / MINT - Minister of International Trade / USS - Deputy Minister of Foreign Affairs / DMA - Associate DM of Foreign Affairs / DME - Deputy Minister of International Development / DMT - Deputy Minister of International Trade / DMX - Coord, International Economic Relations","MINA - Ministre des Affaires étrangères / MINE - Développement international / MINT - Ministre du Commerce international / USS - Sous-ministre des Affaires étrangères / DMA - Sous-ministre délégué des Aff étrangères / DME - Sous-ministre du Développement international / DMT - Sous-ministre du Commerce international / DMX - Coord, Relations Économiques Int`l"
+NA,NA,NA,LEVEL2ID = 204,DCD - Corporate Secretary,DCD - Secrétaire des services intégrés
+NA,NA,NA,LEVEL3ID = 311,DCD - Corporate Secretary Office / DCB - Executive Briefing Division / DCC - Ministerial Correspondence / DCL - Cabinet and Parliamentary Affairs Division / MINL - Departmental Liaison Unit,DCD - Secrétaire des services intégrés / DCB - Direction du breffage de la haute direction / DCC - Correspondance ministérielle / DCL - Direction des relations avec le Cabinet et le Parlement / MINL - Unité de Liaison ministérielle
+NA,NA,NA,LEVEL3ID = 312,DCP - Access to Information and Privacy,DCP - Accès à l'information et protection des renseignements personnels
+NA,NA,NA,LEVEL3ID = 313,DSMX - ADM Office / DSMO - Director General Planning / DSMP - Director General Programs / DWD - Director General Expo Dubaï 2020,DSMX - Bureau du SMA / DSMO - Directeur général de la planification / DSMP - Directeur général des programmes / DWD - Directeur Général Expo Dubaï 2020
+NA,NA,NA,LEVEL2ID = 206,"EGM - Europe, Arctic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb"
+NA,NA,NA,LEVEL3ID = 314,"EGM - ADM Office / ECD - Office of the Senior Arctic Official and DG of Arctic, Eurasian and European Affairs","EGM - Bureau du SMA / ECD - Bureau de le Haute Représentante pour l'Arctique et DG, affaires arctiques, de l'Eurasie et de l'Europe / EGM - Bureau du SMA"
+NA,NA,NA,LEVEL2ID = 209,IFM - International Security and Political Affairs,IFM - Sécurité internationale et affaires politiques
+NA,NA,NA,LEVEL3ID = 324,"IFM - ADM Office / ICD - Bureau for International Crime and Terrorism / IOD - Office of Human Rights, Freedoms and Inclusion","IFM - Bureau du SMA / ICD - Bureau du crime international et du terrorisme / IOD - Bureau de les droits de la personne, des libertés et de l'inclusion"
+NA,NA,NA,LEVEL3ID = 327,IND - Foreign Intelligence Bureau,IND - Direction générale des renseignements extérieures
+NA,NA,NA,LEVEL2ID = 210,"DPD - Internationall Assistance Operations / JUS - GAC Legal Services / VBD - Office of the Chief Audit Executive / WPSA - Ambassador for Women, Peace and Security / ZID - Inspection, Integrity and Values & Ethics","DPD - Opérations d'aide internationale / JUS - Services juridiques AMC / VBD - Bureau du dirigeant princ.de l'audit / WPSA - Ambassadrice pour les femmes, la paix et la sécurité / ZID - Direction générale de l'inspection, de l'intégrité, des valeurs et de l'éthique"
+NA,NA,NA,LEVEL3ID = 328,"DPD - Int'l Assistance Operations Bureau / JUS - GAC Legal Services / VBD - Office of the Chief Audit Executive / WPSA - Ambassador for Women, Peace and Security / ZID - Inspection, Integrity and Values & Ethics Bureau","DPD - Opérations d'aide internationale / JUS - Services juridiques AMC / VBD - Bureau du dirigeant princ.de l'audit / WPSA - Ambassadrice pour les femmes, la paix et la sécurité / ZID - Direction générale de l'inspection, de l'intégrité, des valeurs et de l'éthique"
+NA,NA,NA,LEVEL2ID = 211,JFM - Legal Adviser,JFM - Juriconsulte
+NA,NA,NA,LEVEL3ID = 329,JLD - Legal Affairs (Deputy Legal Adviser) / JLT - Trade Law (Deputy Legal Adviser),JLD - Affaires juridiques (Jurisconsulte adjoint) / JLT - Droit commercial (Jurisconsulte adjoint)
+NA,NA,NA,LEVEL2ID = 212,KFM - Partnerships for Development,KFM - Partenariats pour l'innovation dans le développement
+NA,NA,NA,LEVEL3ID = 330,"KFM - ADM Office / KED - Engaging Canadians / KGD - Inc. Growth, Governance & Innovation / KSD - Canadian Part. for Health & Social / KWD - Partnership for Gender Equality","KFM - Bureau du SMA / KED - Mobilisation des Canadiens / KGD - Part. croissance, gouv. & Innovation / KSD - Part. can. pour la santé & dév. soc / KWD - Partenariat pour l'égalité des genres"
+NA,NA,NA,LEVEL3ID = 331,LCM - ADM Office / LBMO - Business Management Office for Public Affairs and Special Bureaux / LCA - Development / LCC - Trade / LCD - Strategic Communications,LCM - Bureau du SMA / LBMO - Bureau de la gestion des activités des affaires publiques et bureaux spéciaux / LCA - Développement / LCC - Commerce / LCD - Communications stratégiques
+NA,NA,NA,LEVEL2ID = 214,MFM - Global Issues and Development,MFM - Enjeux mondiaux et du développement
+NA,NA,NA,LEVEL3ID = 333,MFM - ADM Office / MED - Economic Development / MFMA - Business Management & Administration Unit / MFMZ - Business Intelligence Unit / MHD - International Humanitarian Assistance / MLD - Innovative and Climate Finance Bureau,MFM - Bureau du SMA / MED - Développement économique / MFMA - Unité de gestion et d'administration / MFMZ - Unité d'intelligence d'affaires / MHD - Assistance humanitaire internationale / MLD - Direction du financement innovant et climatique
+NA,NA,NA,LEVEL3ID = 334,MGD - Social Development / MND - Health and Nutrition / MSD - Food Security and Environment,MGD - Développement social / MND - Santé et de la nutrition / MSD - Sécurité alimentaire et de l'environnement
+NA,NA,NA,LEVEL3ID = 336,NGM - ADM Office / NGD - North America Strategy Bureau / NMD - Geographic Coordination and Mission Support Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord / NMD - Direction générale de la coordination géographique et appui aux missions
+NA,NA,NA,LEVEL3ID = 337,NND - North America Advocacy and Commercial Programs,NND - Promotion des intérêts et programmes commerciaux de l'Amérique du Nord
+NA,NA,NA,LEVEL2ID = 217,PFM - Strategic Policy,PFM - Politiques stratégiques
+NA,NA,NA,LEVEL3ID = 343,PFM - ADM Office / PED - International Economic Policy / POD - Foreign Policy / PRD - Evaluation and Results Bureau / PVD - International Assistance Policy,PFM - Bureau du SMA / PED - Politiques économiques internationales / POD - Politique étrangère / PRD - Bureau de l'évaluation et résultats / PVD - Politique d'aide internationale
+NA,NA,NA,LEVEL2ID = 218,"SCM - Corporate Planning, Finance and Information Technology","SCM - Planification ministérielle, finance et technologie de l'information"
+NA,NA,NA,LEVEL3ID = 344,"SCM - ADM Office / SED - Export & import controls system / SPD - Procurement, Asset Management / SRD - Corporate Planning and Reporting",SCM - Bureau du SMA / SED - Système contrôle de l'import-export / SPD - Approvisionnement et gestion de l'actif / SRD - Planification ministérielle et rapports
+NA,NA,NA,LEVEL3ID = 348,SID - Information Management and Technology (Chief Information Officer),SID - Gestion de l'information et de la technologie (Dirigeant principal de l'information)
+NA,NA,NA,LEVEL2ID = 219,TFM - Trade Policy and Negotiations,TFM - Politique et négociations commerciales
+NA,NA,NA,LEVEL3ID = 349,TFM - ADM Office / TFMA - Associate ADM / TFMU - Corporate Administrative Services / TMD - Chief Air Negotiator / Intellectual Property and Services Trade / TPD - Market Access,TFM - Bureau du SMA / TFMA - SMA déléguée / TFMU - Services administratifs ministériels / TMD - Négociateur en chef des accords aériens / Propriété intellectuelle et services commerciaux / TPD - Accès aux marchés
+NA,NA,NA,LEVEL3ID = 350,TCD - Trade Negotiations / TND - North American Trade Policy and Negotiations Bureau,TCD - Négociations commerciales / TND - Bureau de la politique commerciale et négociations en Amérique du Nord
+NA,NA,NA,LEVEL3ID = 351,TID - Trade and Export Controls,TID - Réglementation commerciale et contrôles à l'exportation
+NA,NA,NA,LEVEL2ID = 220,WGM - Sub-Saharian Africa,WGM - Afrique subsaharienne
+NA,NA,NA,LEVEL3ID = 352,WGM - ADM Office / WFD - Pan-Africa Bureau / WWD - West and Central Africa Bureau,WGM - Bureau du SMA / WFD - Direction générale panafricaine / WWD - Direction générale de l'Afrique de l'Ouest et du Centre
+NA,NA,NA,LEVEL3ID = 353,WED - Southern and Eastern Africa Bureau,WED - Direction générale de l'Afrique australe et de l'Est
+NA,NA,NA,LEVEL3ID = 354,"Office of the Chief of Protocol / XDC - Diplomatic Corps Services / XDE - Summits, Official Events & Management Services / XDV - Official Visits","Bureau du Protocole / XDC - Service du Corps Diplomatique / XDE - Sommets, événements officiels et services des gestion / XDV - Visites officielles"
+NA,NA,NA,LEVEL2ID = 999,I cannot find my organizational unit,Je ne peux pas trouver mon unité organisationnelle
+NA,Global Affairs Canada,Affaires mondiales Canada,NA,Global Affairs Canada,Affaires mondiales Canada
+NA,Public Service,Fonction publique,NA,Public Service,Fonction publique
