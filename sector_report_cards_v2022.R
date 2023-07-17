@@ -206,14 +206,26 @@ if (this_dept == 14) {
       abbr_E = case_when(
         LEVEL1ID == this_dept & LEVEL2ID == 0 ~ this_dept_abbr_e,
         str_detect(abbr_E, "Canada:") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% paste0(" HQ"),
-        str_detect(abbr_E, "AMDBD") ~ "India Net.",
+        str_detect(abbr_E, "AKLND") ~ "OSD-C1",
+        str_detect(abbr_E, "BNGKK") ~ "OSD-C2",
+        str_detect(abbr_E, "AMDBD") ~ "OAD-C1",
+        str_detect(abbr_E, "CLMBO") ~ "OAD-C2",
+        str_detect(abbr_E, "BEJING") ~ "OPD-C1",
+        str_detect(abbr_E, "CHONQ") ~ "OPD-C2",
+        str_detect(abbr_E, "KYUSHU") ~ "OPD-C3",
         str_detect(abbr_E, "Abroad") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_E
       ),
       abbr_F = case_when(
         LEVEL1ID == this_dept & LEVEL2ID == 0 ~ this_dept_abbr_f,
         str_detect(abbr_F, "Canada :") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% paste0(" AC"),
-        str_detect(abbr_E, "AMDBD") ~ "Rés. Inde",
+        str_detect(abbr_F, "AKLND") ~ "OSD-G1",
+        str_detect(abbr_F, "BNGKK") ~ "OSD-G2",
+        str_detect(abbr_F, "AMDBD") ~ "OAD-G1",
+        str_detect(abbr_F, "CLMBO") ~ "OAD-G2",
+        str_detect(abbr_F, "BEJING") ~ "OPD-G1",
+        str_detect(abbr_F, "CHONQ") ~ "OPD-G2",
+        str_detect(abbr_F, "KYUSHU") ~ "OPD-G3",
         str_detect(abbr_F, "A l'etranger") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_F
       )
@@ -613,8 +625,9 @@ report_card <- function(thisUnitcode, lang, customName = NULL, customAbbr = NULL
           panel.spacing = unit(6, "points"),
           strip.background = element_rect(fill = "grey85", colour = "grey85"),
           legend.position = "top",
-          legend.text = element_text(size = 8, colour = "grey50"),
+          legend.text = element_text(size = 6, colour = "grey50"),
           legend.margin = margin(c(0,5,0,5)),
+          legend.spacing.x = unit(0.1, "cm"),
           plot.margin = unit(c(0, 1, 0.5, 0.5), units = "line"),
           panel.grid.major.y = element_line(colour = "grey95"))
   #ggsave("new_panel.pdf")
@@ -684,10 +697,11 @@ report_card <- function(thisUnitcode, lang, customName = NULL, customAbbr = NULL
           panel.spacing = unit(6, "points"),
           strip.background = element_rect(fill = "grey85", colour = "grey85"),
           legend.position = "top",
-          legend.text = element_text(size = 8, colour = "grey50"),
+          legend.text = element_text(size = 6, colour = "grey50"),
           legend.margin = margin(c(0,5,0,5)),
           legend.box.spacing = unit(0,"line"),
           legend.justification = c(0,0.5),
+          legend.spacing.x = unit(0.1, "cm"),
           plot.margin = unit(c(0, 1, 0.5, 0.5), units = "line"),
           panel.grid.major.y = element_line(colour = "grey95"))
   #ggsave("new_panel.pdf")
@@ -1211,50 +1225,7 @@ hjust = 0.5, gp=gpar(fontsize=6, col ="grey30"))
 #----
 ### RUN REPORT CARDS
 
-# These are all of TBS's unit codes
-#c(200,201,202,301,302,303,400,401,402,403,404,304,405,406,407,408,305,306,307,308,309,310,311,312,313,314,315,203)
-
-# Select all TBS sectors, except CIOB (use OCIO below, CDS (because there is no 2017 comparator) and "I cannot find my sector"
-sectorList <- distinct(score100s, unitcode, DESCRIP_E) %>% filter(!unitcode %in% c("300","301","999")) # Exclude CDS, CIOB and NA
-
-org_list <- pses_this_year %>% 
-  distinct(LEVEL1ID, LEVEL2ID, LEVEL3ID, LEVEL4ID, LEVEL5ID)
-
-org_atoms <- bind_rows(
-  org_list %>% filter(LEVEL1ID == this_dept, LEVEL2ID == 0) %>% select(unitcode = LEVEL1ID),
-  org_list %>% count(LEVEL2ID) %>% filter(n == 1) %>% select(unitcode = LEVEL2ID),
-  org_list %>% count(LEVEL3ID) %>% filter(n == 1) %>% select(unitcode = LEVEL3ID),
-  org_list %>% count(LEVEL4ID) %>% filter(n == 1) %>% select(unitcode = LEVEL4ID),
-  org_list %>% count(LEVEL5ID) %>% filter(n == 1) %>% select(unitcode = LEVEL5ID)) %>%
-  mutate(unitcode = as.character(unitcode)) %>% 
-  filter(!unitcode %in% c(this_dept,0,999)) %>%
-  left_join(question100s %>% select(unitcode, DESCRIP_E, DESCRIP_F) %>% distinct()) %>% 
-  mutate(abbr_e = str_remove_all(DESCRIP_E, "(?<!^|[:space:])."),
-         abbr_f = abbreviate(DESCRIP_F, minlength = 2))
-
-sectorList = org_atoms %>% pull(unitcode)
-
-sectorList = question100s %>% 
-  distinct(unitcode,DESCRIP_E) %>% 
-  inner_join(sectors_last_year %>% distinct(DESCRIP_E)) %>% 
-  filter(!unitcode %in% c("999","dept")) %>% 
-  pull(unitcode)
-
-
-report_card(321, "E", customAbbr = NULL, question100s = question100s, score100s = score100s)
-
-#sectorList <- c("310","311","312","313","314","315","203")
-
-#ESDC Sector List
-#sectorList <- distinct(score100s, unitcode, DESCRIP_E) %>% filter(!unitcode %in% c("999")) # Exclude NA
-
-
-#for (i in sectorList$unitcode) { report_card(i, "E", question100s = question100s, score100s = score100s) }
-#for (i in sectorList$unitcode) { report_card(i, "F", question100s = question100s, score100s = score100s) }
-#sectorList <- data.frame(unitcode = c(315, 301, 322, 323, 302, 303, 304, 305,
-#                                      321, 308, 316, 310, 324, 319, 309, 318,
-#                                      311, 312, 325, 313, 317)) %>%
-#  mutate(unitcode = as.character(unitcode))
+sectorList <- 427
 
 sectorList <- c(216, 321, 350:352, 423:432)
 
