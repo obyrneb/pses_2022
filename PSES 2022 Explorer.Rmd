@@ -1,0 +1,29 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(tidyverse)
+library(janitor)
+
+file_list <- list.files(path = "data", pattern = "^(subset|Subset).*2022_2023.*\\.csv$", ignore.case = TRUE, full.names = TRUE) 
+
+data_frames <- map(file_list, ~ read_csv(.x, col_types = rep("c", 35), na = c("9999","X",""), locale = locale(encoding = "latin1")) %>% clean_names())
+
+pses_2022 <- bind_rows(data_frames) %>% 
+  mutate(dem_question = word(bycond, 1))
+  
+
+```
+
+```{r}
+pses_2022 %>% 
+  filter(level1id == "14", dem_question == "Q105A") %>%
+  select(question, )
+```
+

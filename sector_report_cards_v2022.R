@@ -234,6 +234,7 @@ if (this_dept == 14) {
   
 }
 
+
 # Create Question Correspondence table. This is what we use to bind this year's
 # and last year's question data across both files.
 # This is derived from the "Question number correspondence" on the website:
@@ -1225,9 +1226,11 @@ hjust = 0.5, gp=gpar(fontsize=6, col ="grey30"))
 #----
 ### RUN REPORT CARDS
 
-sectorList <- 427
+sectorList <- 359
 
 sectorList <- c(216, 321, 350:352, 423:432)
+
+report_card_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Report Cards/"
 
 for (i in sectorList) { 
   # Get sector abbreviations and construct a filename
@@ -1240,7 +1243,7 @@ for (i in sectorList) {
   rc_f <- report_card(i, "F", question100s = question100s, score100s = score100s)
   
   # Make bilingual pdf two-pager
-  pdf(file.path(plot_dir,rc_filename),height = 8.5, width = 14,
+  pdf(file.path(report_card_dir,rc_filename),height = 8.5, width = 14,
       useDingbats=FALSE)
   #pdf(file.path(main_dir,plot_dir,paste0(i," test.pdf")),height = 8.5, width = 14)
   print(rc_e)
