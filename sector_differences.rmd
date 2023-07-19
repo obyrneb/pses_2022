@@ -1,0 +1,178 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r setup}
+
+source("pses2022.R")
+
+library(tidyverse)
+library(cowplot)
+
+```
+
+```{r Sector line graph, fig.height= 6, fig.width=18.5 }
+
+#this_unitcode <- 342
+
+plot_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Sector Line Charts/"
+
+this_deptcode <- 14
+this_dept_e <- "GAC"
+this_dept_f <- "AMC"
+lang = "e"
+
+pses_org <- read.csv(
+  file.path(data_dir,"Subset 7 - 2022_2023 PSES open dataset - with labels_Sous-ensemble 7 - Ensemble de données ouvertes du SAFF de 2022_23.csv"),
+  encoding = "latin1",
+  na.strings = c("9999", "X")
+) %>% 
+  filter(LEVEL1ID %in% c(0,this_deptcode)) %>% 
+  rename(DESCRIP_E = descrip_E, DESCRIP_F = descrip_F)
+
+sector_list <- c(207, 216, 215, 220) 
+
+
+for (this_unitcode in sector_list) {
+
+  sector_qs <- pses_org %>% 
+    filter(LEVEL1ID %in% c(0,this_deptcode), 
+           SURVEYR == 2022) %>%
+    mutate(unitcode = ifelse(BYCOND == "",
+                             LEVEL1ID,
+                             word(BYCOND, 2, sep = " = "))) %>% 
+    rename(INDICATOR_E = INDICATORENG,
+         INDICATOR_F = INDICATORFRA,
+         SUBINDICATOR_E = SUBINDICATORENG,
+         SUBINDICATOR_F = SUBINDICATORFRA) %>% 
+    mutate(INDICATOR_E = ifelse(INDICATOR_E == "COMPENSATION", "COMP.", INDICATOR_E))
+    
+    #%>%
+  #filter(unitcode %in% c(000,026,203,300,301,302,400,401,402,403,404,405,406,407,408,305,306,307,308,309,310,311,312,313,314,315))
+  
+  subttl_width <- 200
+  
+  unit_level <- filter(sector_qs, unitcode == this_unitcode) %>% pull(BYCOND) %>% pluck(1) %>% word()
+
+  this_sector <- c(e = filter(sector_qs, unitcode == this_unitcode) %>% pull(DESCRIP_E) %>% pluck(1),
+                   f = filter(sector_qs, unitcode == this_unitcode) %>% pull(DESCRIP_F) %>% pluck(1))
+  PS <- c(e = filter(sector_qs, unitcode == 0) %>% pull(DESCRIP_E) %>% pluck(1),
+          f = filter(sector_qs, unitcode == 0) %>% pull(DESCRIP_F) %>% pluck(1))
+  dept <- c(e = filter(sector_qs, unitcode == this_deptcode) %>% pull(DESCRIP_E) %>% pluck(1),
+            f = filter(sector_qs, unitcode == this_deptcode) %>% pull(DESCRIP_F) %>% pluck(1))
+  other_sectors <- c(e = "Other Sectors",
+                     f = "Autres secteurs")
+  ttl <- c(e = paste0("PSES 2020 - Comparison of ",this_sector[["e"]]," and ",dept[["e"]]),
+           f = paste0("SAFF 2020 - Comparaison de ",this_sector[["f"]]," et ",dept[["f"]]))
+  subttl <- c(e = str_wrap(paste0("The top graph displays the \"Score 100\" for all sectors, the department and the Public Service. The bottom graph displays the positive and negative differences between ",dept[["e"]]," scores (flat line) and ",this_sector[["e"]]," scores."), width = subttl_width),
+              f = str_wrap(paste0("Le graphique du haut affiche les « scores 100 » pour tous les secteurs, le ministère et la fonction publique. Le graphique du bas affiche les différences positives et négatives entre les scores de ",dept[["f"]]," (ligne plate) et les scores de ",this_sector[["f"]],"."), width = subttl_width))
+  x_dim <- c(e = "Public Service Employee Survey questions",
+             f = "Questions du Sondage auprès des fonctionnaires fédéraux")
+  y_dim <- c(e = "Score 100",
+             f = "Score 100")
+  filename <- c(e = paste0("PSES2022@",this_dept_e,
+                           " - Sector Line Chart - ",
+                           this_unitcode," - ",
+                           str_replace_all(this_sector[[lang]], "\\\\|/", ";"),
+                           ".png"),
+                f = paste0("SAFF2022@",this_dept_f,
+                           " - Graphique linéaire des secteurs - ",
+                           this_unitcode," - ",
+                           str_replace_all(this_sector[[lang]], "\\\\|/", ";"),
+                           ".png"))
+  
+  
+  sector_qs <- sector_qs %>% 
+    filter(BYCOND %>% str_detect(unit_level) | unitcode %in% c(0,this_dept)) %>% 
+    mutate(highlight = case_when(
+      unitcode == 0 ~ PS[[lang]],
+      unitcode == this_deptcode ~ dept[[lang]],
+      unitcode == this_unitcode ~ this_sector[[lang]],
+      TRUE ~ other_sectors[[lang]]
+    )) %>% 
+    select(QUESTION,SCORE100, highlight,
+           DESCRIP_E,DESCRIP_F,unitcode,BYCOND,
+           INDICATORID,INDICATOR_E,INDICATOR_F) %>%
+    arrange(desc(DESCRIP_E),desc(SCORE100)) %>%
+    mutate(QUESTION = str_sub(QUESTION, start = 2)) %>% 
+    drop_na(SCORE100) %>% 
+    mutate(INDICATOR_E = fct_reorder(INDICATOR_E, INDICATORID)) %>% 
+    mutate(INDICATOR_F = fct_reorder(INDICATOR_F, INDICATORID))
+  
+  deltas <- sector_qs %>% 
+    filter(unitcode %in% c(this_deptcode,this_unitcode)) %>% 
+    select(QUESTION,INDICATOR_E,INDICATOR_F,INDICATORID,unitcode,SCORE100) %>%
+    spread(unitcode,SCORE100) %>% 
+    rename(dept = 5, sector = 6) %>% 
+    mutate(delta = sector - dept)
+  
+  aes_names <- c(PS[[lang]],dept[[lang]],this_sector[[lang]],other_sectors[[lang]])
+  colours <- c("grey50", "#3095B4","#CD202C","grey92")
+  shapes <- c(18,16,21,16)
+  linetypes <- c(2,1,1,1)
+  
+  names(colours) <- aes_names
+  names(shapes) <- aes_names 
+  names(linetypes) <-  aes_names
+  
+  indicator_lang <- as.name(paste0("INDICATOR_",toupper(lang)))
+  
+  line_plot <- ggplot(sector_qs, aes(x = QUESTION, y = SCORE100)) +
+    geom_line(data = filter(sector_qs, highlight == other_sectors[[lang]]),
+              aes(group = DESCRIP_E, colour = highlight, linetype = highlight)) +
+    geom_point(data = filter(sector_qs, highlight == other_sectors[[lang]]), fill = "white",
+               aes(group = DESCRIP_E, colour = highlight, shape = highlight)) +
+    geom_line(data = filter(sector_qs, highlight != other_sectors[[lang]]),
+              aes(group = DESCRIP_E, colour = highlight, linetype = highlight)) +
+    geom_point(data = filter(sector_qs, highlight != other_sectors[[lang]]), fill = "white",
+               aes(group = DESCRIP_E, colour = highlight, shape = highlight)) +
+    scale_colour_manual(values = colours) +
+    scale_shape_manual(values = shapes) +
+    scale_linetype_manual(values = linetypes) +
+    geom_hline(yintercept = 0, colour = "#3095B4") +
+    geom_segment(data = deltas, aes(x = QUESTION, xend = QUESTION, y = 0, yend = delta), colour = "grey70") +
+    geom_point(data = deltas, aes(x = QUESTION, y = 0), colour = "#3095B4") +
+    geom_point(data = deltas, aes(x = QUESTION, y = delta), shape = 21, fill = "white", colour = "#CD202C") +
+    labs(colour = NULL, shape = NULL, linetype = NULL, 
+         title = ttl[[lang]],
+         subtitle = subttl[[lang]],
+         x = x_dim[[lang]], 
+         y = y_dim[[lang]]) +
+    scale_y_continuous(breaks = c(-10,0,10,25,50,75,100)) +
+    facet_grid(cols = vars(!!indicator_lang), #rows = vars(DemoQ_E),
+               scales = "free", space = "free",
+               labeller = label_wrap_gen(18)) +
+    theme_classic() +
+    theme(
+      legend.position = "top",#c(.105,.35),
+      legend.background = element_rect(fill = alpha("white",0.6)),
+      panel.grid.major.y = element_line(colour = "grey90"),
+      #legend.box.background = element_rect(fill = alpha("white",0.4)),
+      line = element_line(colour = "grey30"),
+      text = element_text(colour = "grey30"),
+      axis.text.x = element_text(angle = 90, vjust = 0.5),
+      axis.text.y = element_text(angle = 90, hjust = 0.5),
+      #panel.background = element_rect(fill = NA, colour = "black"),
+      #strip.background = element_rect(colour = NA, fill = "grey90"),
+      strip.background = element_blank(),
+      strip.text = element_text(size = 8),
+      axis.title = element_text(size = 10)
+    )
+  #axis.title.x = element_blank())
+  
+  line_plot
+  
+  
+  ggsave(file.path(plot_dir,filename[[lang]]),
+         plot = line_plot, height = 6, width = 18.5)
+  
+}
+#ggsave(file.path(mainDir,plotDir,"SAFF2018@TBS - Graphique linéaire des secteurs (SSC).svg"),
+#       plot = line_plot_f, height = 3.5, width = 16)
+
+```

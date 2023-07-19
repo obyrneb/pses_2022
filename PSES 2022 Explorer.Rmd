@@ -10,20 +10,26 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 ```{r}
 library(tidyverse)
 library(janitor)
+library(readxl)
 
 file_list <- list.files(path = "data", pattern = "^(subset|Subset).*2022_2023.*\\.csv$", ignore.case = TRUE, full.names = TRUE) 
 
 data_frames <- map(file_list, ~ read_csv(.x, col_types = rep("c", 35), na = c("9999","X",""), locale = locale(encoding = "latin1")) %>% clean_names())
 
 pses_2022 <- bind_rows(data_frames) %>% 
-  mutate(dem_question = word(bycond, 1))
+  left_join(
+    distinct(., bycond) %>% mutate(dem_question = word(bycond, 1)),
+    by = "bycond"
+  )
   
+short_questions <- read_excel(file.path("data","pses_2022_short_questions.xlsx"), sheet = "pses_2022")
 
 ```
 
 ```{r}
 pses_2022 %>% 
-  filter(level1id == "14", dem_question == "Q105A") %>%
-  select(question, )
+  filter(str_detect(dem_question, "105"), level1id == 1, question == "Q01") %>% 
+  count(dem_question, bycond, descrip_e, descrip_f, wt = anscount) %>% 
+  arrange(dem_question)
 ```
 

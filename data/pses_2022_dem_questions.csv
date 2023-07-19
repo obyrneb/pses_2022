@@ -1,0 +1,53 @@
+dem_question, dem_question_e, dem_question_f
+none,Organization,Organisation
+org,Organization,Organisation
+Q81,Supervisor,Superviseur
+Q93,Work Arrangement,Lieu de travail,
+Q102,Shift worker, Travail par postes
+Q103,Full- or part-time,Temps plein ou partiel
+Q104,Employee status,Situation professionnelle
+D105,Occupational category,Catégorie professionnelle
+Q105A,Occupational group, Groupe professionnel
+OCCLEVEL,Level,Niveau
+Q106,Language requirements,Exigences linguistiques
+Q107,Kind of work, Genre de travail
+Q108,Activities or duties,Activités ou fonctions
+Q109,Community,Collectivité
+D110,Years in Public Service,Années à la fonction publique
+D111,Years at department,Années au ministère
+Q112,Official language,Langue officielle
+Q113,Serve the public,Service au public
+Q114,Province/territory,Province/territorie
+Q115,Bilingual area,Région bilingue
+Q116,Age group,Groupe d'âge
+Q117,Gender,Genre
+D118,Disability,Handicap
+D118A,Disability: vision,Handicap : vision
+D118B,Disability: hearing, Handicap : ouie
+D118C,Disability: speech, Handicap : parole
+D118D,Disability: mobility,Handicap : mobilité
+D118E,Disability: dexterity,Handicap : dextérité
+D118F,Disability: mental health,Handicap : santé mentale
+D118G,Disability: sensory,Handicap :  sensoriel
+D118H,Disability: chronic condition,Handicap : maladie chronique
+D118I,Disability: cognitive,Handicap : cognitif
+D118J,Disability: intellectual,Handicap : intelelctual
+D118K,Disability: other,Handicap : autre
+D119,Indigenous,Autochtone
+D119A,First Nations, Premières Nations
+D119B,Inuk (Inuit), Inuk (Inuit)
+D119C,Métis,Métis
+D120_1,Racial group,Groupe racial
+D120_2,Racialized,Racisé
+D121,Ethnic Origin,Origine ethnique
+D122,2SLGBTQIA+,2ELGBTQIA+
+D122A,Two-spirit,Deux esprits
+D122B,Lesbian,Lesbienne
+D122C,Gay,Gaie
+D122D,Bisexual,Bisexuelle
+D122E,Transgender,Trangenre
+D122F,Queer,Queer
+D122G,Questioning,En questionnement
+D122H,Intersex,Intersexuée
+D122I,Asexual,Asexuelle
+D122J,Another identity,Authre identité
