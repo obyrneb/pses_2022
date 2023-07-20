@@ -6,7 +6,7 @@ LEVEL2ID = 203,"CORE - Office of Canadian Ombudsperson for Responsible Enterpris
 LEVEL2ID = 204,MIN - Ministers Offices / DM - Deputy Ministers' Offices / USS,MIN - Bureaux des ministres / DM - Bureaux des sous-ministres / USS,LEVEL2ID = 203,MIN - Ministers Offices / DM - Deputy Ministers' Offices / USS,MIN - Bureaux des ministres / DM - Bureaux des sous-ministres / USS
 LEVEL2ID = 205,DCD - Corporate Secretariat,DCD - Secrétaire des affaires ministérielles,NA,NA,NA
 LEVEL2ID = 206,DSMX - Summits Management Office,DSMX - Bureau de la gestion des sommets,LEVEL2ID = 205,DSMX - Summits Management Office,DSMX - Bureau de la gestion des sommets
-LEVEL2ID = 207,"EGM - Europe, Artic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb",NA,NA,NA
+LEVEL2ID = 207,"EGM - Europe, Artic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb",LEVEL2ID = 206,"EGM - Europe, Arctic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb"
 LEVEL2ID = 208,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL2ID = 207,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
 LEVEL2ID = 208,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP),LEVEL3ID = 318,HCM - Employees on Foreign Language Training (FRLNG) or in a Special Assignment Pool (SAP),HCM - Employés en formation de langues étrangères (FRLNG) ou bassin d'affectations spéciales (SAP)
 LEVEL2ID = 209,HCM - Human Resources,HCM - Ressources Humaines,LEVEL2ID = 208,HCM - Human Resources,HCM - Ressources Humaines
@@ -20,7 +20,7 @@ LEVEL2ID = 216,OGM - Asia Pacific,OGM - Asie-Pacifique,LEVEL2ID = 216,OGM - Asia
 LEVEL2ID = 217,PFM - Strategic Policy,PFM - Politique stratégique,NA,NA,NA
 LEVEL2ID = 218,"SCM - Corporate Planning, Finance and Information Technology (Chief Financial Officer)","SCM - Planification ministérielle, finance et technologie de l’information (Dirigeant principal des finances)",NA,NA,NA
 LEVEL2ID = 219,TFM - Trade Policy and Negotiations,TFM - Politique & négociations commerciales,NA,NA,NA
-LEVEL2ID = 220,WGM - Sub-Saharan Africa,WGM - Afrique subsaharienne,NA,NA,NA
+LEVEL2ID = 220,WGM - Sub-Saharan Africa,WGM - Afrique subsaharienne,LEVEL2ID = 220,WGM - Sub-Saharian Africa,WGM - Afrique subsaharienne
 LEVEL2ID = 221,XDD - Office of Protocol,XDD - Bureau du Protocole,LEVEL2ID = 221,XDD - Office of Protocol,XDD - Bureau du Protocole
 LEVEL2ID = 999,I cannot find my organizational unit,Je ne trouve pas mon unité organisationnelle,NA,NA,NA
 LEVEL3ID = 300,AAD - Platform Corporate Services,AAD - Services ministériels de la plateforme,LEVEL3ID = 301,AAD - Platform Corporate Services,AAD - Services ministériels de la plateforme
@@ -149,7 +149,6 @@ NA,NA,NA,LEVEL2ID = 204,DCD - Corporate Secretary,DCD - Secrétaire des services
 NA,NA,NA,LEVEL3ID = 311,DCD - Corporate Secretary Office / DCB - Executive Briefing Division / DCC - Ministerial Correspondence / DCL - Cabinet and Parliamentary Affairs Division / MINL - Departmental Liaison Unit,DCD - Secrétaire des services intégrés / DCB - Direction du breffage de la haute direction / DCC - Correspondance ministérielle / DCL - Direction des relations avec le Cabinet et le Parlement / MINL - Unité de Liaison ministérielle
 NA,NA,NA,LEVEL3ID = 312,DCP - Access to Information and Privacy,DCP - Accès à l'information et protection des renseignements personnels
 NA,NA,NA,LEVEL3ID = 313,DSMX - ADM Office / DSMO - Director General Planning / DSMP - Director General Programs / DWD - Director General Expo Dubaï 2020,DSMX - Bureau du SMA / DSMO - Directeur général de la planification / DSMP - Directeur général des programmes / DWD - Directeur Général Expo Dubaï 2020
-NA,NA,NA,LEVEL2ID = 206,"EGM - Europe, Arctic, Middle East and Maghreb","EGM - Europe, Arctique, Moyen-Orient et Maghreb"
 NA,NA,NA,LEVEL3ID = 314,"EGM - ADM Office / ECD - Office of the Senior Arctic Official and DG of Arctic, Eurasian and European Affairs","EGM - Bureau du SMA / ECD - Bureau de le Haute Représentante pour l'Arctique et DG, affaires arctiques, de l'Eurasie et de l'Europe / EGM - Bureau du SMA"
 NA,NA,NA,LEVEL2ID = 209,IFM - International Security and Political Affairs,IFM - Sécurité internationale et affaires politiques
 NA,NA,NA,LEVEL3ID = 324,"IFM - ADM Office / ICD - Bureau for International Crime and Terrorism / IOD - Office of Human Rights, Freedoms and Inclusion","IFM - Bureau du SMA / ICD - Bureau du crime international et du terrorisme / IOD - Bureau de les droits de la personne, des libertés et de l'inclusion"
@@ -174,7 +173,6 @@ NA,NA,NA,LEVEL2ID = 219,TFM - Trade Policy and Negotiations,TFM - Politique et n
 NA,NA,NA,LEVEL3ID = 349,TFM - ADM Office / TFMA - Associate ADM / TFMU - Corporate Administrative Services / TMD - Chief Air Negotiator / Intellectual Property and Services Trade / TPD - Market Access,TFM - Bureau du SMA / TFMA - SMA déléguée / TFMU - Services administratifs ministériels / TMD - Négociateur en chef des accords aériens / Propriété intellectuelle et services commerciaux / TPD - Accès aux marchés
 NA,NA,NA,LEVEL3ID = 350,TCD - Trade Negotiations / TND - North American Trade Policy and Negotiations Bureau,TCD - Négociations commerciales / TND - Bureau de la politique commerciale et négociations en Amérique du Nord
 NA,NA,NA,LEVEL3ID = 351,TID - Trade and Export Controls,TID - Réglementation commerciale et contrôles à l'exportation
-NA,NA,NA,LEVEL2ID = 220,WGM - Sub-Saharian Africa,WGM - Afrique subsaharienne
 NA,NA,NA,LEVEL3ID = 352,WGM - ADM Office / WFD - Pan-Africa Bureau / WWD - West and Central Africa Bureau,WGM - Bureau du SMA / WFD - Direction générale panafricaine / WWD - Direction générale de l'Afrique de l'Ouest et du Centre
 NA,NA,NA,LEVEL3ID = 353,WED - Southern and Eastern Africa Bureau,WED - Direction générale de l'Afrique australe et de l'Est
 NA,NA,NA,LEVEL3ID = 354,"Office of the Chief of Protocol / XDC - Diplomatic Corps Services / XDE - Summits, Official Events & Management Services / XDV - Official Visits","Bureau du Protocole / XDC - Service du Corps Diplomatique / XDE - Sommets, événements officiels et services des gestion / XDV - Visites officielles"

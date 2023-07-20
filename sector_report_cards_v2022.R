@@ -356,8 +356,8 @@ score100s <- question100s %>%
 # SET SECTOR - for testing purposes only
 
 
-thisUnitcode <- "321"
-thisAbbr <- "CFSI"
+thisUnitcode <- "216"
+thisAbbr <- "OGM"
 
 customName <- NULL
 customAbbr <- NULL
@@ -544,8 +544,13 @@ report_card <- function(thisUnitcode, lang, customName = NULL, customAbbr = NULL
     filter(unitcode == thisUnitcode) %>% 
     select(INDICATORID,INDICATOR_lang,QUESTION,TITLE_lang,q_short_lang,
            unitcode,abbr_lang,DESCRIP_lang,SURVEYR,SCORE100,AGREE) %>%
+    mutate(SURVEYR = case_when(
+      SURVEYR == last_y ~ "sector_last_year",
+      SURVEYR == this_y ~ "sector_this_year",
+      TRUE ~ as.character(SURVEYR)
+    )) %>% 
     pivot_wider(names_from = SURVEYR, values_from = SCORE100) %>%
-    rename(sector_this_year = last_col(), sector_last_year = last_col(1)) %>% 
+    #rename(sector_this_year = last_col(), sector_last_year = last_col(1)) %>% 
     mutate(sector_delta = sector_this_year - sector_last_year) %>% 
     left_join(question100s %>% 
                 filter(unitcode == "dept", SURVEYR == this_y) %>%
@@ -1226,9 +1231,9 @@ hjust = 0.5, gp=gpar(fontsize=6, col ="grey30"))
 #----
 ### RUN REPORT CARDS
 
-sectorList <- 359
+sectorList <- 216
 
-sectorList <- c(216, 321, 350:352, 423:432)
+sectorList <- c(207, 215, 216, 220, 321, 350:352, 359, 423:432)
 
 report_card_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Report Cards/"
 
