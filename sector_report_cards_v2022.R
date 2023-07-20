@@ -1240,7 +1240,7 @@ report_card_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Report Cards/
 for (i in sectorList) { 
   # Get sector abbreviations and construct a filename
   sector_name <- as.character(score100s$DESCRIP_E[score100s$unitcode==i])
-  sector_name <-  str_replace_all(sector_name, "\\\\|/|:", ";")
+  sector_name <-  str_replace_all(sector_name, "\\\\| / |: | : ", ";")
   print(sector_name)
   rc_filename <- paste0("PSES2022 Report Cards (EN&FR) - ",i," - ",sector_name,".pdf")
   
