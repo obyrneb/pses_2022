@@ -9,8 +9,6 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 ```{r setup}
 
-source("pses2022.R")
-
 library(tidyverse)
 library(cowplot)
 
@@ -18,7 +16,7 @@ library(cowplot)
 
 ```{r Sector line graph, fig.height= 6, fig.width=18.5 }
 
-#this_unitcode <- 342
+this_unitcode <- 423
 
 plot_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Sector Line Charts/"
 
@@ -28,14 +26,14 @@ this_dept_f <- "AMC"
 lang = "e"
 
 pses_org <- read.csv(
-  file.path(data_dir,"Subset 7 - 2022_2023 PSES open dataset - with labels_Sous-ensemble 7 - Ensemble de données ouvertes du SAFF de 2022_23.csv"),
+  file.path("data","Subset 7 - 2022_2023 PSES open dataset - with labels_Sous-ensemble 7 - Ensemble de données ouvertes du SAFF de 2022_23.csv"),
   encoding = "latin1",
   na.strings = c("9999", "X")
 ) %>% 
   filter(LEVEL1ID %in% c(0,this_deptcode)) %>% 
   rename(DESCRIP_E = descrip_E, DESCRIP_F = descrip_F)
 
-sector_list <- c(207, 216, 215, 220) 
+sector_list <- c(423:432) 
 
 
 for (this_unitcode in sector_list) {
@@ -50,7 +48,7 @@ for (this_unitcode in sector_list) {
          INDICATOR_F = INDICATORFRA,
          SUBINDICATOR_E = SUBINDICATORENG,
          SUBINDICATOR_F = SUBINDICATORFRA) %>% 
-    mutate(INDICATOR_E = ifelse(INDICATOR_E == "COMPENSATION", "COMP.", INDICATOR_E))
+    mutate(INDICATOR_E = ifelse(INDICATOR_E == "Compensation", "Comp.", INDICATOR_E))
     
     #%>%
   #filter(unitcode %in% c(000,026,203,300,301,302,400,401,402,403,404,405,406,407,408,305,306,307,308,309,310,311,312,313,314,315))
@@ -78,17 +76,17 @@ for (this_unitcode in sector_list) {
   filename <- c(e = paste0("PSES2022@",this_dept_e,
                            " - Sector Line Chart - ",
                            this_unitcode," - ",
-                           str_replace_all(this_sector[[lang]], "\\\\|/", ";"),
+                           str_replace_all(this_sector[[lang]], "\\\\| / |: ", ";"),
                            ".png"),
                 f = paste0("SAFF2022@",this_dept_f,
                            " - Graphique linéaire des secteurs - ",
                            this_unitcode," - ",
-                           str_replace_all(this_sector[[lang]], "\\\\|/", ";"),
+                           str_replace_all(this_sector[[lang]], "\\\\| / | : ", ";"),
                            ".png"))
   
   
   sector_qs <- sector_qs %>% 
-    filter(BYCOND %>% str_detect(unit_level) | unitcode %in% c(0,this_dept)) %>% 
+    filter(BYCOND %>% str_detect(unit_level) | unitcode %in% c(0,this_deptcode)) %>% 
     mutate(highlight = case_when(
       unitcode == 0 ~ PS[[lang]],
       unitcode == this_deptcode ~ dept[[lang]],

@@ -1231,7 +1231,7 @@ hjust = 0.5, gp=gpar(fontsize=6, col ="grey30"))
 #----
 ### RUN REPORT CARDS
 
-sectorList <- 216
+sectorList <- 355
 
 sectorList <- c(207, 215, 216, 220, 321, 350:352, 359, 423:432)
 
@@ -1255,6 +1255,8 @@ for (i in sectorList) {
   print(rc_f)
   dev.off()
 }
+
+
 
 #i <- 407
 #sector_name <- as.character(score100s$DESCRIP_E[score100s$unitcode==i])
@@ -1320,39 +1322,39 @@ for (i in sectorList) {
 
 
 
-# GAC: Department
-pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - Global Affairs Canada.pdf"),
-    height = 8.5, width = 14, useDingbats = FALSE)
-report_card("PS", "E", customAbbr = "PS", question100s = question100s, score100s = score100s)
-report_card("PS", "F", customAbbr = "FP", question100s = question100s, score100s = score100s)
-dev.off()
-
- 
-
-# GAC: WED - 355
-pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 355 - WED.pdf"),
-    height = 8.5, width = 14, useDingbats = FALSE)
-report_card(355, "E", customAbbr = "WED", customName = "WED - Southern and Eastern Africa", question100s = question100s, score100s = score100s)
-report_card(355, "F", customAbbr = "WED", customName = "WED - Afrique australe et de l'Est", question100s = question100s, score100s = score100s)
-dev.off()
-
-# GAC: ADMo / WFD / WWD - 354
-pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 354 - WGM ADMO, WFD & WWD.pdf"),
-    height = 8.5, width = 14, useDingbats = FALSE)
-report_card(354, "E", customAbbr = "ADMO/WFD/WWD", customName = "WGM ADM Office / WFD - Pan-Africa / WWD - West and Central Africa", question100s = question100s, score100s = score100s)
-report_card(354, "F", customAbbr = "BSMA/WFD/WWD", customName = "Bureau du SMA WGM / WFD - Affaires panafricaines / WWD - Afrique de l'Ouest et du Centre", question100s = question100s, score100s = score100s)
-dev.off()
-
-# GAC: PRR - 354
-pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 354 - WGM ADMO, WFD & WWD.pdf"),
-    height = 8.5, width = 14, useDingbats = FALSE)
-report_card(354, "E", customAbbr = "ADMO/WFD/WWD", customName = "WGM ADM Office / WFD - Pan-Africa / WWD - West and Central Africa", question100s = question100s, score100s = score100s)
-report_card(354, "F", customAbbr = "BSMA/WFD/WWD", customName = "Bureau du SMA WGM / WFD - Affaires panafricaines / WWD - Afrique de l'Ouest et du Centre", question100s = question100s, score100s = score100s)
-dev.off()
-
-# GAC: DCD - 204
-pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 204 - DCD.pdf"),
-    height = 8.5, width = 14, useDingbats = FALSE)
-report_card(204, "E", customAbbr = "DCD", customName = "DCD - Corporate Secretary", question100s = question100s, score100s = score100s)
-report_card(204, "F", customAbbr = "DCD", customName = "DCD - Secrétaire des services intégrés", question100s = question100s, score100s = score100s)
-dev.off()
+## GAC: Department
+#pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - Global Affairs Canada.pdf"),
+#    height = 8.5, width = 14, useDingbats = FALSE)
+#report_card("PS", "E", customAbbr = "PS", question100s = question100s, score100s = score100s)
+#report_card("PS", "F", customAbbr = "FP", question100s = question100s, score100s = score100s)
+#dev.off()
+#
+# 
+#
+## GAC: WED - 355
+#pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 355 - WED.pdf"),
+#    height = 8.5, width = 14, useDingbats = FALSE)
+#report_card(355, "E", customAbbr = "WED", customName = "WED - Southern and Eastern Africa", question100s = question100s, score100s = score100s)
+#report_card(355, "F", customAbbr = "WED", customName = "WED - Afrique australe et de l'Est", question100s = question100s, score100s = score100s)
+#dev.off()
+#
+## GAC: ADMo / WFD / WWD - 354
+#pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 354 - WGM ADMO, WFD & WWD.pdf"),
+#    height = 8.5, width = 14, useDingbats = FALSE)
+#report_card(354, "E", customAbbr = "ADMO/WFD/WWD", customName = "WGM ADM Office / WFD - Pan-Africa / WWD - West and Central Africa", question100s = question100s, score100s = score100s)
+#report_card(354, "F", customAbbr = "BSMA/WFD/WWD", customName = "Bureau du SMA WGM / WFD - Affaires panafricaines / WWD - Afrique de l'Ouest et du Centre", question100s = question100s, score100s = score100s)
+#dev.off()
+#
+## GAC: PRR - 354
+#pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 354 - WGM ADMO, WFD & WWD.pdf"),
+#    height = 8.5, width = 14, useDingbats = FALSE)
+#report_card(354, "E", customAbbr = "ADMO/WFD/WWD", customName = "WGM ADM Office / WFD - Pan-Africa / WWD - West and Central Africa", question100s = question100s, score100s = score100s)
+#report_card(354, "F", customAbbr = "BSMA/WFD/WWD", customName = "Bureau du SMA WGM / WFD - Affaires panafricaines / WWD - Afrique de l'Ouest et du Centre", question100s = question100s, score100s = score100s)
+#dev.off()
+#
+## GAC: DCD - 204
+#pdf(file.path(plot_dir,"PSES2020 Report Cards (EN&FR) - 204 - DCD.pdf"),
+#    height = 8.5, width = 14, useDingbats = FALSE)
+#report_card(204, "E", customAbbr = "DCD", customName = "DCD - Corporate Secretary", question100s = question100s, score100s = score100s)
+#report_card(204, "F", customAbbr = "DCD", customName = "DCD - Secrétaire des services intégrés", question100s = question100s, score100s = score100s)
+#dev.off()

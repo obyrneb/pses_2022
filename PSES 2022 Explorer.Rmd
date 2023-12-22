@@ -33,3 +33,29 @@ pses_2022 %>%
   arrange(dem_question)
 ```
 
+```{r}
+pses_2022 %>% 
+  filter(is.na(bycond)) %>% 
+  group_by(dept_e, surveyr) %>% 
+  summarise(
+    avg_score100 = mean(score100, na.rm = TRUE),
+) %>% 
+  ungroup() %>%
+  arrange(desc(surveyr)) %>% 
+  pivot_wider(names_from = surveyr, values_from = avg_score100) %>% 
+  arrange(`2022`) %>% 
+  mutate(rank_2022 = row_number()) %>% 
+  select(dept_e, rank_2022, everything()) %>% 
+  left_join(
+    pses_2022 %>% 
+      filter(is.na(bycond)) %>% 
+      group_by(dept_e) %>% 
+      summarise(
+        avg_anscount = mean(anscount, na.rm = TRUE) %>% round(),
+      ) %>% 
+      ungroup(),
+    by = "dept_e"
+  )
+  
+```
+
