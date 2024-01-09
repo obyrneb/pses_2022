@@ -213,6 +213,12 @@ if (this_dept == 14) {
         str_detect(abbr_E, "BEJING") ~ "OPD-C1",
         str_detect(abbr_E, "CHONQ") ~ "OPD-C2",
         str_detect(abbr_E, "KYUSHU") ~ "OPD-C3",
+        str_detect(abbr_E, "ANKRA") ~ "ECD-C1",
+        str_detect(abbr_E, "ALGER") ~ "ELD-C1",
+        str_detect(abbr_E, "ABDBI") ~ "ESD-C1",
+        str_detect(abbr_E, "CSDPLD") ~ "EUD-C1",
+        str_detect(abbr_E, "BREU") ~ "EUD-C2",
+        str_detect(abbr_E, "ATHNS") ~ "EUD-C3",
         str_detect(abbr_E, "Abroad") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_E
       ),
@@ -226,6 +232,12 @@ if (this_dept == 14) {
         str_detect(abbr_F, "BEJING") ~ "OPD-G1",
         str_detect(abbr_F, "CHONQ") ~ "OPD-G2",
         str_detect(abbr_F, "KYUSHU") ~ "OPD-G3",
+        str_detect(abbr_F, "ANKRA") ~ "ECD-C1",
+        str_detect(abbr_F, "ALGER") ~ "ELD-C1",
+        str_detect(abbr_F, "ABDBI") ~ "ESD-C1",
+        str_detect(abbr_F, "CSDPLD") ~ "EUD-C1",
+        str_detect(abbr_F, "BREU") ~ "EUD-C2",
+        str_detect(abbr_F, "ATHNS") ~ "EUD-C3",
         str_detect(abbr_F, "A l'etranger") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_F
       )
@@ -1235,12 +1247,15 @@ sectorList <- 355
 
 sectorList <- c(207, 215, 216, 220, 321, 350:352, 359, 423:432)
 
+sectorList <- c(207, 315:318, 400:409)
+
 report_card_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Report Cards/"
 
 for (i in sectorList) { 
   # Get sector abbreviations and construct a filename
   sector_name <- as.character(score100s$DESCRIP_E[score100s$unitcode==i])
   sector_name <-  str_replace_all(sector_name, "\\\\| / |: | : ", ";")
+  sector_name <-  str_replace_all(sector_name, "/", " ")
   print(sector_name)
   rc_filename <- paste0("PSES2022 Report Cards (EN&FR) - ",i," - ",sector_name,".pdf")
   
