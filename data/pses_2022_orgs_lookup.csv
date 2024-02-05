@@ -69,11 +69,11 @@ LEVEL3ID = 341,MID - International Organizations,MID - Organisations internation
 LEVEL3ID = 342,MLD - Innovative and Climate Finance Bureau,MLD - Direction du financement innovant et climatique,NA,NA,NA
 LEVEL3ID = 343,MND - Health and Nutrition,MND - Santé et de la nutrition,NA,NA,NA
 LEVEL3ID = 344,MSD - Food Security and Environment,MSD - Sécurité alimentaire et de l'environnement,NA,NA,NA
-LEVEL3ID = 345,NGM - ADM Office / NGD - North America Strategy Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord,NA,NA,NA
+LEVEL3ID = 345,NGM - ADM Office / NGD - North America Strategy Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord,LEVEL3ID = 336,NGM - ADM Office / NGD - North America Strategy Bureau / NMD - Geographic Coordination and Mission Support Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord / NMD - Direction générale de la coordination géographique et appui aux missions
 LEVEL3ID = 346,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes,LEVEL3ID = 339,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes
 LEVEL3ID = 347,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines,LEVEL3ID = 338,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines
-LEVEL3ID = 348,NMD - Geographic Coordination and Mission Support Bureau,NMD - Direction générale de la coordination géographique et appui aux missions,NA,NA,NA
-LEVEL3ID = 349,NND - North America Advocacy and Commercial Programs,NND - Promotion des intérêts et programmes commerciaux de l’Amérique du Nord,NA,NA,NA
+LEVEL3ID = 348,NMD - Geographic Coordination and Mission Support Bureau,NMD - Direction générale de la coordination géographique et appui aux missions,LEVEL3ID = 336,NGM - ADM Office / NGD - North America Strategy Bureau / NMD - Geographic Coordination and Mission Support Bureau,NGM - Bureau du SMA / NGD - Direction générale de la Stratégie pour l'Amérique du nord / NMD - Direction générale de la coordination géographique et appui aux missions
+LEVEL3ID = 349,NND - North America Advocacy and Commercial Programs,NND - Promotion des intérêts et programmes commerciaux de l’Amérique du Nord,LEVEL3ID = 337,NND - North America Advocacy and Commercial Programs,NND - Promotion des intérêts et programmes commerciaux de l'Amérique du Nord
 LEVEL3ID = 350,OGM - ADM Office / OSD - Southeast Asia and Oceania,OGM - Bureau du SMA / OSD - Asie Sud-Est et Océanie,LEVEL3ID = 340,OGM - ADM Office / OSD - Southeast Asia,OGM - Bureau du SMA / OSD - Asie Sud-Est
 LEVEL3ID = 351,OAD - South Asia,OAD - Asie du Sud,LEVEL3ID = 342,OAD - South Asia,OAD - Asie du Sud
 LEVEL3ID = 352,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord,LEVEL3ID = 341,OPD - Trade & Diplomacy North Asia,OPD - Asie du nord
@@ -110,12 +110,12 @@ LEVEL4ID = 410,Canada: IGD - International Security Policy Bureau,Canada : IGD -
 LEVEL4ID = 411,Abroad: VOSCE / VPERM / BNATO,À l'étranger : VOSCE / VPERM / BNATO,NA,NA,NA
 LEVEL4ID = 412,Canada: MID - International Organizations,Canada : MID - Organisations internationales,NA,NA,NA
 LEVEL4ID = 413,Abroad: GENEV / PESCO / PRMNY,À l'étranger : GENEV / PESCO / PRMNY,NA,NA,NA
-LEVEL4ID = 414,Canada: NDD - Central America & Caribbean,Canada : NDD - Amérique centrale & Caraïbes,NA,NA,NA
-LEVEL4ID = 415,Abroad Cluster 1: GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,À l'étranger groupement 1 : GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,NA,NA,NA
-LEVEL4ID = 416,Abroad Cluster 2: BDGTN / HAVAN / KNGTN / PRNCE,À l'étranger groupement 2 : BDGTN / HAVAN / KNGTN / PRNCE,NA,NA,NA
-LEVEL4ID = 417,Canada: NLD - South America and Inter-American Affairs,Canada : NLD - Amérique du Sud et Affaires interaméricaines,NA,NA,NA
-LEVEL4ID = 418,Abroad Cluster 1: BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,À l'étranger groupement 1 : BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,NA,NA,NA
-LEVEL4ID = 419,Abroad Cluster 2: BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,À l'étranger groupement 2 : BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,NA,NA,NA
+LEVEL4ID = 414,Canada: NDD - Central America & Caribbean,Canada : NDD - Amérique centrale & Caraïbes,LEVEL3ID = 339,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes
+LEVEL4ID = 415,Abroad Cluster 1: GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,À l'étranger groupement 1 : GRGTN / GTMLA / MNGUA / PANAM / PCANA / PSPAN / SDMGO / SJCRA / SSAL / TGLPA,LEVEL3ID = 339,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes
+LEVEL4ID = 416,Abroad Cluster 2: BDGTN / HAVAN / KNGTN / PRNCE,À l'étranger groupement 2 : BDGTN / HAVAN / KNGTN / PRNCE,LEVEL3ID = 339,NDD - Central America & Caribbean,NDD - Amérique centrale & Caraïbes
+LEVEL4ID = 417,Canada: NLD - South America and Inter-American Affairs,Canada : NLD - Amérique du Sud et Affaires interaméricaines,LEVEL3ID = 338,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines
+LEVEL4ID = 418,Abroad Cluster 1: BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,À l'étranger groupement 1 : BGOTA / CRCAS / LAPAZ / LIMA / PRMOAS / QUITO,LEVEL3ID = 338,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines
+LEVEL4ID = 419,Abroad Cluster 2: BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,À l'étranger groupement 2 : BAIRS / BELO / BRSLA / MVDEO / PALGR / RECIF / RIO / SPALO / STAGO,LEVEL3ID = 338,NLD - South America and Inter-American Affairs,NLD - Amérique du Sud et Affaires interaméricaines
 LEVEL4ID = 420,Abroad Cluster 1: WSHDC,À l'étranger groupement 1 : WSHDC,NA,NA,NA
 LEVEL4ID = 421,Abroad Cluster 2 : ATNTA / BOSTN / CHCGO / CNGNY / CSDPWS / DALAS / DENVR / DTROT / HSTON / LNGLS / MIAMI / MNPLS / PALTO / SEATL / SFRAN / SNDGO,À l'étranger groupement 2 : ATNTA / BOSTN / CHCGO / CNGNY / CSDPWS / DALAS / DENVR / DTROT / HSTON / LNGLS / MIAMI / MNPLS / PALTO / SEATL / SFRAN / SNDGO,NA,NA,NA
 LEVEL4ID = 422,Abroad Cluster 3: APLCO / CNCUN / CRMEN / CSDPMX / GJARA / LCABO / MNTRY / MXICO / MZTLN / PVRTA,À l'étranger groupement 3 : APLCO / CNCUN / CRMEN / CSDPMX / GJARA / LCABO / MNTRY / MXICO / MZTLN / PVRTA,NA,NA,NA

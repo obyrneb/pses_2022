@@ -219,6 +219,8 @@ if (this_dept == 14) {
         str_detect(abbr_E, "CSDPLD") ~ "EUD-C1",
         str_detect(abbr_E, "BREU") ~ "EUD-C2",
         str_detect(abbr_E, "ATHNS") ~ "EUD-C3",
+        str_detect(abbr_E, "GRGTN") ~ "NDD-C1",
+        str_detect(abbr_E, "BDGTN") ~ "NDD-C2",
         str_detect(abbr_E, "Abroad") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_E
       ),
@@ -238,6 +240,8 @@ if (this_dept == 14) {
         str_detect(abbr_F, "CSDPLD") ~ "EUD-C1",
         str_detect(abbr_F, "BREU") ~ "EUD-C2",
         str_detect(abbr_F, "ATHNS") ~ "EUD-C3",
+        str_detect(abbr_F, "GRGTN") ~ "NDD-C1",
+        str_detect(abbr_F, "BDGTN") ~ "NDD-C2",
         str_detect(abbr_F, "A l'etranger") ~ str_extract(abbr_F, "(?<=: )(.*)") %>% str_replace_all("\\s+", ""),
         TRUE ~ abbr_F
       )
@@ -368,8 +372,8 @@ score100s <- question100s %>%
 # SET SECTOR - for testing purposes only
 
 
-thisUnitcode <- "216"
-thisAbbr <- "OGM"
+thisUnitcode <- "207"
+thisAbbr <- "EGM"
 
 customName <- NULL
 customAbbr <- NULL
@@ -1248,6 +1252,9 @@ sectorList <- 355
 sectorList <- c(207, 215, 216, 220, 321, 350:352, 359, 423:432)
 
 sectorList <- c(207, 315:318, 400:409)
+
+#NDD
+sectorList <- c(346, 414:416) 
 
 report_card_dir <- "C:/Users/byron/Google Drive/GAC/PSES/PSES 2022/Report Cards/"
 
